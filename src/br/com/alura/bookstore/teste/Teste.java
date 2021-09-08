@@ -19,6 +19,14 @@ public class Teste {
 				.ofPattern("dd/MM/yyyy")));
 		System.out.println(a.getEmail());
 		System.out.println(a.getMiniCurriculo());
+		
+		Autores a2 = new Autores(
+				"Nelson Martins",
+				"nelson@gmail.com",
+				LocalDate.of(1960, 4, 14),
+				"Eu sou o melhor autor de livros");
+		
+		System.out.println(a2);
 
 	}
 
