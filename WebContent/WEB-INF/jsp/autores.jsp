@@ -11,7 +11,24 @@
 	<title>Lista de Autores</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
+	<form>
+		<div class="form-group">
+			<label for="nome">Nome</label>
+			<input id="nome" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="DataNascimento">Data de nascimento</label>
+			<input id="DataNascimento" class="form-control">
+		</div>
+		
+		<input type="submit" value="Gravar" class="mt-2 btn-primary">
+	</form>
+	
 	<h1 class="text-center">Lista de Autores</h1>
 	<table class="table table-hover table-striped table-bordered">
 		<thead>
