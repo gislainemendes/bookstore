@@ -12,18 +12,18 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body class="container">
-	<form>
+	<form action="<c:url value="/autores"/>" method="POST">
 		<div class="form-group">
 			<label for="nome">Nome</label>
-			<input id="nome" class="form-control">
+			<input id="nome" class="form-control" name="nome">
 		</div>
 		<div class="form-group">
 			<label for="email">Email</label>
-			<input id="email" class="form-control">
+			<input id="email" class="form-control" name="email">
 		</div>
 		<div class="form-group">
-			<label for="DataNascimento">Data de nascimento</label>
-			<input id="DataNascimento" class="form-control">
+			<label for="dataNascimento">Data de nascimento</label>
+			<input id="dataNascimento" class="form-control" name="dataNascimento">
 		</div>
 		
 		<input type="submit" value="Gravar" class="mt-2 btn-primary">

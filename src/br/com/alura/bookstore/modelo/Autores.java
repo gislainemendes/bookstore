@@ -15,6 +15,16 @@ public class Autores {
 				+ miniCurriculo + "]";
 	}
 
+	
+	
+	public Autores(String name, String email, LocalDate birthDate) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.birthDate = birthDate;
+	}
+
+
 	public Autores() {
 	}
 
