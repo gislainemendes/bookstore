@@ -36,11 +36,12 @@ public class AutoresServlet extends HttpServlet {
 		String email = req.getParameter("email");
 		LocalDate data = LocalDate.parse(req.getParameter("dataNascimento"), 
 				DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+		String curriculo = req.getParameter("curriculo");
 		
 		Autores a1 = new Autores(
 				nome,
 				email,
-				data);
+				data, curriculo);
 		
 		autores.add(a1);
 

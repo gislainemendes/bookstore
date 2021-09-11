@@ -14,16 +14,20 @@
 <body class="container">
 	<form action="<c:url value="/autores"/>" method="POST">
 		<div class="form-group">
-			<label for="nome">Nome</label>
-			<input id="nome" class="form-control" name="nome">
+			<label for="name">Nome</label>
+			<input id="name" class="form-control" name="name">
 		</div>
 		<div class="form-group">
 			<label for="email">Email</label>
 			<input id="email" class="form-control" name="email">
 		</div>
 		<div class="form-group">
-			<label for="dataNascimento">Data de nascimento</label>
-			<input id="dataNascimento" class="form-control" name="dataNascimento">
+			<label for="birthDate">Data de nascimento</label>
+			<input id="birthDate" class="form-control" name="birthDate">
+		</div>
+		<div class="form-group">
+			<label for="curriculo">Mini Curriculo</label>
+			<input id="curriculo" class="form-control" name="curriculo">
 		</div>
 		
 		<input type="submit" value="Gravar" class="mt-2 btn-primary">
