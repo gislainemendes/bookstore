@@ -46,7 +46,7 @@ public class AutoresDAO {
 				Autores autor = new Autores(
 						rs.getString("name"), 
 						rs.getString("email"),
-						rs.getDate("date").toLocalDate(),
+						rs.getDate("birthDate").toLocalDate(),
 						rs.getString("curriculo"));
 				autores.add(autor);
 			}

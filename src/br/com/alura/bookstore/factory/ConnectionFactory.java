@@ -7,7 +7,7 @@ public class ConnectionFactory {
 	
 
 	public Connection getConnection() {
-		String url = "jdbc:mysql://localhost:3306/bookstore";
+		String url = "jdbc:mysql://localhost:3306/bookstore?useSSL=false&serverTimeZone=UTC";
 		String username = "gislaine";
 		String password = "gislaine";
 

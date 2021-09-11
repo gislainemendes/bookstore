@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
 
 import br.com.alura.bookstore.dao.AutoresDAO;
 import br.com.alura.bookstore.factory.ConnectionFactory;
@@ -41,9 +39,9 @@ public class AutoresServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		String nome = req.getParameter("nome");
+		String nome = req.getParameter("name");
 		String email = req.getParameter("email");
-		LocalDate data = LocalDate.parse(req.getParameter("dataNascimento"), 
+		LocalDate data = LocalDate.parse(req.getParameter("birthDate"), 
 				DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 		String curriculo = req.getParameter("curriculo");
 		
