@@ -12,13 +12,13 @@ public class Teste {
 		a.setName("Jorge Mateus");
 		a.setBirthDate(LocalDate.of(1980, 3, 21));
 		a.setEmail("jorge@gmail.com");
-		a.setMiniCurriculo("Eu sou um autor de livros");
+		a.setCurriculo("Eu sou um autor de livros");
 		
 		System.out.println(a.getName());
 		System.out.println(a.getBirthDate().format(DateTimeFormatter
 				.ofPattern("dd/MM/yyyy")));
 		System.out.println(a.getEmail());
-		System.out.println(a.getMiniCurriculo());
+		System.out.println(a.getCurriculo());
 		
 		Autores a2 = new Autores(
 				"Nelson Martins",
